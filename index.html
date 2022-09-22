@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="inner-box" id="card">
+            <div class="card-front">
+                <h2>Login</h2>
+                <form>
+                    <input type="email" class="input-box"
+                    placeholder="enter your email" id="required">
+                    <input type="password" class="input-box"
+                    placeholder="enter your password" id="required">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <input type="checkbox"><span>Remember me</span>
+
+                </form>
+                <button type="button" class="btn" onclick="openRegister()">Iam new here</button>
+                <a href="">Forgot password</a>
+            </div>
+            <div class="card-back">
+                <h2>Register</h2>
+                <form>
+                    <input type="text" class="input-box"
+                    placeholder="enter your name" id="required">
+                    <input type="text" class="input-box"
+                    placeholder="enter your address" id="required">
+                    <input type="number" class="input-box"
+                    placeholder="enter your mobile number" id="required">
+                    
+                <input type="email" class="input-box"
+                    placeholder="enter your email" id="required">
+                    <label for="">Company Name</label><input type="text" class="input-box"
+                    placeholder="enter your company name" >
+                    <label for="">Occupation</label><input type="text" class="input-box"
+                    placeholder="enter your Occupation" >
+                    <label for="">Year of expirience </label><input type="number" class="input-box"
+                   min="0">
+                    <input type="password" class="input-box"
+                    placeholder="enter your password" id="required">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <input type="checkbox"><span>I have an Account</span>
+
+                </form>
+                <button type="button" class="btn"onclick="openLogin()">Register here</button>
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    var card=document.getElementById("card");
+    function openRegister(){
+        card.style.transform="rotateY(-180deg)";
+    }
+    function openLogin(){
+        card.style.transform="rotateY(0deg)";
+    }
+</script>
+    
+</body>
+</html>
